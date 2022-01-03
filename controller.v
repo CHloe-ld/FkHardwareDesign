@@ -54,7 +54,7 @@ module controller(
 	wire memtoregD,memwriteD,alusrcD,
 		regdstD,regwriteD;
 	wire[7:0] alucontrolD;//改成�?8�?
-	wire branchD,jumpD,balD,jrD,jalD,jalrD;//0103
+	wire branchD,jumpD;//0103
 
 	//execute stage
 	wire memwriteE;
@@ -65,7 +65,7 @@ module controller(
 	wire branchM;//0103
 
 	maindec md(
-		opD,funcD,rtD,//add funcD & rtD
+		opD,functD,rtD,//add funcD & rtD
 		memtoregD,memwriteD,
 		branchD,alusrcD,
 		regdstD,regwriteD,

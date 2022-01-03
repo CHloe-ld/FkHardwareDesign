@@ -86,7 +86,7 @@ module mips(
 		//jumpD,//shan
 		//equalD,//shan
 		//010322*****
-		opD,functD,
+		opD,functD,rtD,
 		//execute stage
 		memtoregE,
 		alusrcE,regdstE,

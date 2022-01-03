@@ -31,7 +31,8 @@ module datapath(
 	//input wire jumpD,//�?
 	//output wire equalD,////�?
 	//input wire jrD, jalrD,jalD,balD,// 硬综添加/////////要删�?
-	output wire[5:0] opD,functD,////打印出来看的
+	output wire[5:0] opD,functD,
+	output wire[4:0] rtD,////打印出来看的
 
 	//execute stage
 	input wire memtoregE,
@@ -65,7 +66,7 @@ module datapath(
 	//decode stage
 	wire [31:0] pcplus4D,instrD;
 	wire forwardaD,forwardbD;
-	wire [4:0] rsD,rtD,rdD;
+	wire [4:0] rsD,rdD;
 	wire flushD,stallD; 
 	wire [31:0] signimmD,signimmshD;
 	wire [31:0] srcaD,srca2D,srcbD,srcb2D;
